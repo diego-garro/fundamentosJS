@@ -31,3 +31,9 @@ imprimirNombreEnMAyusculas(dario)
 imprimirNombreYEdad(diego)
 imprimirNombreYEdad(dario)
 
+function cumpleanos(persona) {
+	return {
+		...persona,
+		edad: persona.edad + 1
+	}
+	}
