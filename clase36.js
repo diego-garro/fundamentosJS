@@ -6,16 +6,21 @@ var diego = {
 }
 
 function esMayorDeEdad(persona) {
-    var mensaje
-    if (persona.edad > 18) {
+    let mensaje
+    const MAYORIA_DE_EDAD = 18
+    if (persona.edad > MAYORIA_DE_EDAD) {
         mensaje = 'Es mayor de edad.'
     } else {
         mensaje = 'Es menor de edad.'
-        var mensaje2 = 'Este es otro mensaje'
     }
 
     console.log(mensaje)
-    console.log(mensaje2)
 }
 
-esMayorDeEdad(diego)
+//esMayorDeEdad(diego)
+
+for (let i = 0; i < 10; i++) {
+    console.log(i)
+}
+
+console.log(`Terminó el for, el valor de i es ${i}`)
