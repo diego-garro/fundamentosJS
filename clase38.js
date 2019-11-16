@@ -1,19 +1,17 @@
 
 /*
-La división entera de 13 / 4 es 3
-13 /_4___
-13 - 4 = 9  1
-9 - 4 = 5   1
-5 - 4 = 1   1
-1 - 4 ? -3  0
+Factorial
+
+!6 = 6 * 5 * 4 * 3 * 2 * 1 = 720
+!12 = 12 * 11 * 10 * ... * 1 = 12 * 11 * 10 * 9 * 8 * 7 * !6
 */
 
-function divisionEntera(dividendo, divisor) {
-    if (dividendo < divisor) {
-        return 0
+function factorial(n) {
+    if (n === 1) {
+        return 1
     }
 
-    return 1 + divisionEntera(dividendo - divisor, divisor)
+    return n * factorial(n - 1)
 }
 
-console.log(divisionEntera(33, 3))
+console.log(factorial(6))
